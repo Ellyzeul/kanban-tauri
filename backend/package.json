@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.ts",
+    "start": "npm run build && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.11.8",
+    "fastify": "^4.25.2",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3",
+    "ts-node": "^10.9.2"
+  }
+}

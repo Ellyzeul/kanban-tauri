@@ -1,2 +1,2 @@
-# kanban-tauri
-Aplicação de kanban para estudos em Tauri
+# Kanban Tauri
+Aplicação de kanban para estudos em Tauri.
