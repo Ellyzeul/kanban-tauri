@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "../../ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "../../../ui/card"
 import TasksColumnHeader from "./TasksColumnHeader"
 import { TasksColumnProp } from "./types"
 
@@ -8,8 +8,8 @@ const TasksColumn = ({ title, tasks }: TasksColumnProp) => {
       <TasksColumnHeader title={title} />
       <div className="row-span-8 md:row-span-9 flex flex-col items-center overflow-y-auto">
         {
-          tasks.map(({ title, description }) => (
-            <Card className="w-11/12 mt-3">
+          tasks.map(({ title, description }, key) => (
+            <Card className="w-11/12 mt-3" key={key}>
               <CardHeader>
                 <CardTitle>{title}</CardTitle>
               </CardHeader>
